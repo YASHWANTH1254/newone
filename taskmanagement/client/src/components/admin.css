@@ -1,0 +1,62 @@
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+  }
+  
+  .nav-bar {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 20px 0; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+  }
+  
+  .nav-bar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .admin-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .logout-button {
+    background: transparent;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-task-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+  }
+  
