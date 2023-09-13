@@ -9,13 +9,13 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    background: #fff;
   }
   
   .nav-bar {
     width: 100%;
-    background: #007bff;
-    color: #fff;
+    background: #7cbdf5;
+    color: #591fe0;
     padding: 20px 0; /* Adjusted padding */
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ body {
   }
   
   .create-task-button {
-    background-color: #007bff;
+    background-color: #5aa2f0;
     color: #fff;
     padding: 10px 20px;
     border: none;

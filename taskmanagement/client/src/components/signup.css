@@ -1,21 +1,24 @@
-/* CSS Styles for SignupForm */
+
 
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0; 
+    min-height: 100vh; 
+    background-color: #f0f0f0;
+    
+  
   }
   
   .signup-card {
-    width: 300px;
+    width: 400px; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    background-color: #d5edf5;
-    background-image: url('https://static-00.iconduck.com/assets.00/jira-icon-512x512-kkop6eik.png');
+    background-color: #e0ecf0;
+    /* background-image: url('https://image.winudf.com/v2/image1/Y29tLmF0bGFzc2lhbi5qaXJhLnNlcnZlcl9pY29uXzE1NTk2MjcwNDdfMDQ0/icon.png?fakeurl=1&h=240&type=webp'); */
+   
   }
   
   .signup-header {
@@ -53,5 +56,11 @@
     color: green;
     margin-top: 25px;
     text-align: center;
+  }
+  
+ 
+  .card-footer.text-center {
+    text-align: center;
+    margin-top: 20px;
   }
   
