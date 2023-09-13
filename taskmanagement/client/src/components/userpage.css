@@ -5,12 +5,12 @@
   }
   
   .navbar {
-    background-color:#007bff;
+    background-color:#1563a7;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    color: #f0f0f0ff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   }
   
@@ -27,7 +27,7 @@
   }
   
   .logout-button {
-    background-color: transparent;
+    
     color: white;
     border: none;
     padding: 5px 10px;
@@ -52,13 +52,16 @@
     font-size: 16px;
     font-weight: bold;
   }
-  
+
   .logout-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #1863a0; /* Custom background color */
+    color: white; /* Custom text color */
+    border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 20px;
+    border: 2px solid #d8d7d7; /* Custom border color */
   }
+  
+  
   

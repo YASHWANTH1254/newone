@@ -27,7 +27,7 @@ function AdminPage() {
           Welcome, {userName}
         </div>
         <button
-          className="logout-button create-task-button"
+          className="logout-button"
           onClick={() => window.location.href = '/'}
         >
           Log Out

@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff;
+    padding: 20px;
+    align-items: center;
+    color: white;
+  }
+  
+  .createTaskButton {
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+  
+  .adminName {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: white;
+    color: #007bff;
+  }
+  
+  .createLogButton {
+    margin-top: 20px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+  .customLogButton {
+    /* Add your custom styles here */
+    background-color: red; 
+    font-size: 16px; 
+  }
+  

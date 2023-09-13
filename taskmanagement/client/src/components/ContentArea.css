@@ -11,7 +11,7 @@
     margin: 5px;
     margin-right: 8px;
     padding: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 5px;
     background-color: #f0f0f0;
   }
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: center;
     font-size: 15px;
-    background-color: #007bff;
+    background-color: #1563a7;
     color: #fff;
   }
   

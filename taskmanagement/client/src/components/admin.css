@@ -14,8 +14,8 @@ body {
   
   .nav-bar {
     width: 100%;
-    background: #7cbdf5;
-    color: #591fe0;
+    background: #1563a7;
+    color: #fbfbfc;
     padding: 20px 0; /* Adjusted padding */
     display: flex;
     justify-content: space-between;
@@ -34,17 +34,10 @@ body {
     font-weight: bold;
   }
   
-  .logout-button {
-    background: transparent;
-    color: #007bff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  
   
   .create-task-button {
-    background-color: #5aa2f0;
+    background-color: #1563a7;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -58,5 +51,15 @@ body {
     width: 100%;
     padding: 20px;
     background: #fff;
+  }
+
+  .logout-button {
+    background-color: #032441; /* Custom background color */
+    color: white; /* Custom text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ff5722; /* Custom border color */
   }
   
