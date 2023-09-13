@@ -7,10 +7,15 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const dotenv = require("dotenv")
+dotenv.config()
+
+const port = process.env.PORT
+
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: "password",
+  user: "yash",
+  host: "192.168.30.73",
+  password: "admin",
   database: "manager"
 });
 
@@ -132,6 +137,6 @@ app.post('/done', (req, res) => {
   });
 });
 
-app.listen(4000, () => {
+app.listen(port, "192.168.30.73",  () => {
   console.log("Running backend server");
 });

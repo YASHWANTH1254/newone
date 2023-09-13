@@ -10,7 +10,7 @@ function TaskForm({ onCreateTask }) {
 
     const newTask = { title, description };
     try {
-      await axios.post('http://localhost:4000/addTasks', newTask);
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/addTasks`, newTask);
       onCreateTask(newTask);
       setTitle('');
       setDescription('');
@@ -53,7 +53,7 @@ function TaskForm({ onCreateTask }) {
           cursor: 'pointer',
         }}
       >
-        SUBMIT TASK
+      SUBMIT TASK
       </button>
     </form>
   );

@@ -12,7 +12,7 @@ function LoginForm() {
   const handleLogin = (e) => {
     e.preventDefault();
   
-    axios.post('http://localhost:4000/login', { email, password })
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, { email, password })
       .then((response) => {
         if (response.data.role === 'admin') {
           localStorage.setItem('userId', response.data.id);

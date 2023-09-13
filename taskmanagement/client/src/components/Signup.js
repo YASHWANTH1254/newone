@@ -22,7 +22,7 @@ function SignupForm() {
 
     if (values.name !== '' && values.email !== '' && values.password !== '' && values.role !== '') {
       axios
-        .post('http://localhost:4000/addUsers', values)
+        .post(`${process.env.REACT_APP_BACKEND_URL}/addUsers`, values)
         .then((res) => {
           console.log(res);
           setRegistrationSuccess(true);
