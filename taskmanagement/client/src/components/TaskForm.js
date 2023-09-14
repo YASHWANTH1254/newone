@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './TaskForm.css'; 
 
 function TaskForm({ onCreateTask }) {
   const [title, setTitle] = useState('');
@@ -20,40 +21,34 @@ function TaskForm({ onCreateTask }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ width: '665px',textAlign:'center',marginLeft:'350px', padding: '20px', background: '#f0f0f0', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
-      <div style={{ marginBottom: '15px' }}>
-        <label htmlFor="taskTitle" style={{ fontWeight: 'bold' }}>Title:</label>
+    <form className="form-container" onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="taskTitle" className="form-label">
+          Title:
+        </label>
         <input
           type="text"
-          style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '4px' }}
+          className="form-input"
           id="taskTitle"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
         />
       </div>
-      <div style={{ marginBottom: '15px' }}>
-        <label htmlFor="taskDescription" style={{ fontWeight: 'bold' }}>Description:</label>
+      <div>
+        <label htmlFor="taskDescription" className="form-label">
+          Description:
+        </label>
         <textarea
-          style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '4px' }}
+          className="form-input"
           id="taskDescription"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
         />
       </div>
-      <button
-        type="submit"
-        style={{
-          backgroundColor: '#007bff',
-          color: 'white',
-          border: 'none',
-          padding: '10px 20px',
-          borderRadius: '4px',
-          cursor: 'pointer',
-        }}
-      >
-      SUBMIT TASK
+      <button type="submit" className="form-button">
+        SUBMIT TASK
       </button>
     </form>
   );

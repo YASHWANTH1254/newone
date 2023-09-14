@@ -137,6 +137,6 @@ app.post('/done', (req, res) => {
   });
 });
 
-app.listen(port, "192.168.30.73",  () => {
+app.listen(port,  () => {
   console.log("Running backend server");
 });

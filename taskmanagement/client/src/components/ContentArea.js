@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TaskForm from './TaskForm';
 import axios from 'axios';
-import './ContentArea.css'; // Import your CSS file
+import './ContentArea.css'; 
 
 function ContentArea({ isCreateTaskOpen, userId, isAdmin, isUser, userName }) {
   const [tasks, setTasks] = useState([]);

@@ -54,12 +54,12 @@ body {
   }
 
   .logout-button {
-    background-color: #032441; /* Custom background color */
+    background-color: #1863a0; /* Custom background color */
     color: white; /* Custom text color */
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    border: 1px solid #ff5722; /* Custom border color */
+    border: 2px solid #d8d7d7; /* Custom border color */
   }
   
