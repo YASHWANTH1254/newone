@@ -20,7 +20,6 @@ function AdminPage() {
 
   return (
     <div className="admin-page">
-      {/* Navigation Bar */}
       <div className="nav-bar">
         <h1>ADMIN PAGE</h1>
         <div className="admin-name">

@@ -12,7 +12,7 @@ function LeftSidebar({ adminName, onCreateTask }) {
         </button>
         <a href="/">
           <button className="createLogButton customLogButton">
-            Logout
+            Log Out
           </button>
         </a>
       </div>

@@ -22,8 +22,6 @@ const db = mysql.createConnection({
 
 
 
-
-
 app.post('/addUsers', (req, res) => {
   const formData = req.body;
 
@@ -59,6 +57,28 @@ app.post('/login', (req, res) => {
     res.json({ role: userRole, id: userId, name: userName });
   });
 });
+
+app.post('/checkUserRole', (req, res) => {
+  const { email } = req.body;
+  db.query('SELECT id, role, name FROM users WHERE email = ?', [email], (err, results) => {
+  if (err) {
+   console.error(err);
+  res.status(500).json({ message: 'Error authenticating user' });
+  return;
+  }
+  
+  if (results.length === 0) {
+  res.status(401).json({ message: 'Invalid credentials' });
+   return;
+  }
+  
+  const userRole = results[0].role;
+  const userId = results[0].id;
+  const userName = results[0].name;
+  
+   res.json({ role: userRole, id: userId, name: userName });
+  });
+  });
 
 app.post('/addTasks', (req, res) => {
   const { title, description } = req.body;
